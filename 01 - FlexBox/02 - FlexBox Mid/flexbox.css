@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: #ccc;
+  padding: 10px;
+  display: flex;
+  /* Decides how to align flex items along main axis*/
+  flex-direction: row;
+  /* Align's the flex elements along the main axis */
+  justify-content: space-around;
+  /* Align's the flex elements along the cross axis */
+  align-items: center;
+
+  flex: <grow> <shrink> <basis>;
+}
+
+.item {
+  background-color: #cc143c;
+  padding: 40px;
+  margin: 30px;
+  font-size: 40px;
+  color: white;
+  font-family: lato;
+}
+
+.i3 {
+  height: 200px;
+  flex-basis: 300px;
+  flex-shrink: 0;
+}
+
+.i4 {
+  /* Overwrites the align item property for one element */
+  align-self: flex-end;
+  /* Positions the flex element in position*/
+  order: 5;
+  flex-grow: 5;
+}
